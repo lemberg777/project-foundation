@@ -1,0 +1,137 @@
+.top-section {
+  background-color: $color-pink;
+  @include large-screen {
+    width: 1400px;
+    height: 710px;
+    padding-top: 39px;
+  }
+}
+.header {
+  min-width: 320px;
+  height: 64px;
+  background-color: $color-white;
+  box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
+  display: flex;
+
+  @include large-screen {
+    background-color: $color-pink;
+    width: 1140px;
+    height: 62px;
+    margin: auto;
+
+    box-shadow: none;
+  }
+}
+.logo {
+  display: flex;
+  @include large-screen {
+    width: 299px;
+    height: 60px;
+    display: flex;
+  }
+  &__text {
+    width: 111px;
+    height: 25px;
+    margin-left: 13px;
+    margin-top: 20px;
+    margin-bottom: 19px;
+    @include large-screen {
+      width: 222px;
+      height: 51px;
+      margin-left: 15px;
+      margin-top: 6px;
+      margin-bottom: 5px;
+    }
+  }
+  &__name {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+  }
+  &__deckription {
+    display: none;
+    @include large-screen {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      opacity: 0.6;
+      margin: 0;
+      width: 222px;
+    }
+  }
+  &__image {
+    width: 48px;
+    height: 48px;
+    margin-top: 8px;
+    margin-left: 15px;
+    border-radius: 8px;
+    @include large-screen {
+      margin-left: 0;
+      margin-top: 0;
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+.navigation {
+  display: none;
+  @include large-screen {
+    display: flex;
+    width: 284px;
+    height: 25px;
+    justify-content: space-between;
+
+    margin-top: 7px;
+    margin-right: 56px;
+    margin-left: 335px;
+  }
+
+  &__item {
+    @include large-screen {
+      font-size: 18px;
+      line-height: 25px;
+      text-decoration: none;
+      color: $text-color-main;
+    }
+  }
+}
+.navigation__item_active {
+  @include large-screen {
+    font-weight: 700;
+    color: $text-color-main;
+  }
+}
+
+.navigation__arrow {
+  display: none;
+  @include large-screen {
+    display: inline-block;
+    width: 8px;
+    height: 5px;
+    background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png);
+    margin-left: 11px;
+  }
+}
+
+.button-blue-hidden {
+  display: none;
+  @include large-screen {
+    display: block;
+    width: 160px;
+  }
+}
+.header-menu-button {
+  width: 58px;
+  height: 64px;
+  margin-left: 74px;
+  padding: 0;
+  border: none;
+  border-left: 1px solid rgba(0, 0, 0, 0.15);
+  background-image: url(https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/icon-hamburger.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  @include large-screen {
+    display: none;
+  }
+}

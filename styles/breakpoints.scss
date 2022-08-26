@@ -1,0 +1,12 @@
+$lg: 1400px;
+
+@mixin large-screen {
+  @media screen and (min-width: $lg) {
+    @content;
+  }
+}
+@mixin small-screen {
+  @media screen and (max-width: $lg-1) {
+    @content;
+  }
+}

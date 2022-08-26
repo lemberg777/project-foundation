@@ -1,0 +1,44 @@
+@import 'breakpoints.scss';
+@import 'variables.scss';
+
+html {
+  font-family: 'Work Sans', sans-serif;
+  color: $text-color-main;
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $color-white-light;
+}
+main {
+  min-width: 320px;
+  margin: auto;
+  background-color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  @include large-screen {
+    width: 1400px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
+@import 'common.scss';
+@import 'header.scss';
+@import 'headline.scss';
+@import 'footer.scss';
+@import 'about.scss';
+@import 'customers.scss';
+@import 'features.scss';
+@import 'inbox.scss';
+@import 'communications.scss';
+@import 'audience.scss';
+@import 'feedback.scss';
+@import 'hiring.scss';
+@import 'order.scss';

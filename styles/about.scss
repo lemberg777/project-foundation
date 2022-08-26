@@ -1,0 +1,39 @@
+.about {
+  padding: 40px 15px;
+  background-color: $color-light;
+  @include large-screen {
+    width: 1400px;
+    height: 255px;
+    padding: 77px 131px 76px 131px;
+    display: flex;
+  }
+}
+
+.article {
+  @include large-screen {
+    width: 555px;
+    height: 102px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 32px;
+    font-weight: 700;
+    margin: 0px;
+    padding: 0;
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+    padding: 0;
+  }
+}
+.article-who {
+  margin-top: 20px;
+  @include large-screen {
+    margin-top: 0;
+    margin-left: 29px;
+  }
+}

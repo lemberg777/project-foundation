@@ -1,0 +1,103 @@
+.order {
+  min-width: 320px;
+  padding: 50px 15px;
+  background-color: $color-light;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @include large-screen {
+    height: 441px;
+    padding: 0;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  &__img {
+    width: 200px;
+    height: 220px;
+    @include large-screen {
+      width: 269.41px;
+      height: 296px;
+      margin: 73px 0 72px 224px;
+    }
+  }
+}
+
+.order-info {
+  @include large-screen {
+    width: 100%;
+    margin: 106px 0 106px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+    margin-top: 40px;
+    @include large-screen {
+      text-align: left;
+      margin-top: 0;
+      height: 48px;
+      margin-left: 122.59px;
+    }
+  }
+  &__deskription {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 18px;
+    max-height: 167px;
+    @include large-screen {
+      width: 555px;
+      margin-top: 12px;
+      height: 64px;
+      margin-left: 121.59px;
+    }
+  }
+  &__email {
+    width: 100%;
+    background-color: $color-white;
+    border: 1px solid rgba(43, 41, 45, 0.2);
+    border-radius: 2px;
+    height: 48px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 13px;
+    margin-top: 40px;
+    &::placeholder {
+      color: $text-color-main;
+    }
+    @include large-screen {
+      width: 385px;
+      margin-top: 26px;
+      margin-left: 123.59px;
+    }
+  }
+  &__button {
+    width: 100%;
+    margin-top: 12px;
+    @include large-screen {
+      width: 160px;
+      margin-top: 26px;
+      margin-left: 10px;
+    }
+  }
+  &__advice {
+    width: 100%;
+    height: 22px;
+    font-size: 14px;
+    line-height: 22px;
+    color: rgba(43, 41, 45, 0.6);
+    margin-top: 10px;
+    @include large-screen {
+      width: 100%;
+      margin-left: 122.59px;
+    }
+  }
+  &__advice-link {
+    color: $color-blue;
+  }
+}
