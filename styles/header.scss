@@ -12,6 +12,7 @@
   background-color: $color-white;
   box-shadow: 0px 4px 16px rgba(44, 50, 65, 0.08);
   display: flex;
+  justify-content: space-between;
 
   @include large-screen {
     background-color: $color-pink;
@@ -123,7 +124,7 @@
 .header-menu-button {
   width: 58px;
   height: 64px;
-  margin-left: 74px;
+  margin-left: 0;
   padding: 0;
   border: none;
   border-left: 1px solid rgba(0, 0, 0, 0.15);
